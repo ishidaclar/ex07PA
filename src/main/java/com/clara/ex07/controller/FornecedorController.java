@@ -32,7 +32,7 @@ public class FornecedorController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deletar (@PathVariable Long id){
+    public ResponseEntity<Void> deletarFornecedor (@PathVariable Long id){
         fornecedorService.deletar(id);
         return ResponseEntity.noContent().build();
     }
